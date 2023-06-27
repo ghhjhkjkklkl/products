@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" async defer src="./js/products.js"></script>
+    <script type="module" async defer src="./js/mobileMenu.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <ul class="header__list">
+            <li class="header__link-title">Home</li>
+            <li class="header__title">Products</li>
+          </ul>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-list">
+      <div class="container">
+        <div class="product-list__wrapper">
+          <aside>
+            <input placeholder="Search..." type="text" class="search-input" />
+            <ul class="filter-list"></ul>
+            <input
+              type="range"
+              class="price-input"
+              min="0"
+              max="100"
+              value="100"
+            />
+            <div class="price-wrapper">
+              <p class="price-min">0$</p>
+              <p class="price-max"></p>
+            </div>
+          </aside>
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
